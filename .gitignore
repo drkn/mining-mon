@@ -1,0 +1,9 @@
+/*.conf
+/tmp
+/run
+*.iml
+.idea
+.eslintcache
+node_modules
+
+/bin/claymore*/*_log.txt

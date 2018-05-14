@@ -1,0 +1,3 @@
+ccminer - https://github.com/tpruvot/ccminer/releases
+ccminer alexis - https://github.com/yoyosan/ccminer-alexis-1.0
+claymore dual - https://bitcointalk.org/index.php?topic=1433925.0
