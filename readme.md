@@ -2,6 +2,8 @@
 
 Complete solution for mining software management with integrated monitoring and watchdog
 
+![miner-mon screenshot](docs/images/screenshot.png)
+
 ## Features
 - Hardware monitoring (CPU temp, FAN speed, GPU power usage, GPU memory clocks, GPU clocks)
 - Miner monitoring (hashrate, shares)
