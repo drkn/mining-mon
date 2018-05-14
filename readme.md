@@ -34,7 +34,7 @@ App serves `/status.json` and `/rig_state.json` files. App logs are accessible i
 Default web server port is `8181`
 
 ## Roadmap (future plans)
-See https://trello.com/b/EPdQEPJh/mining-win :)
+See https://github.com/drkn/mining-mon/projects/2 :)
 
 ## License
 Copyright (c) 2018 Maciej Dragan
