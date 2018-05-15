@@ -26,8 +26,8 @@ Complete solution for mining software management with integrated monitoring and 
 
 ## Installation & configuration
 1. After checking out the repository run: `npm install`
-2. Place optional `worker.conf` in `mining-win` directory. See `config-examples\worker.conf` for deails
-3. Place `run.conf` in `mining-win` directory. See `config-examples` directory for details
+2. Place optional `worker.conf` in `mining-mon` directory. See `config-examples\worker.conf` for deails
+3. Place `run.conf` in `mining-mon` directory. See `config-examples` directory for details
 
 App reads config in order `worker.conf`, `run.conf`. Variables from later override existing variables. You can use variables in `${variable}` format
 
