@@ -39,6 +39,17 @@ You can use all configuration files at once. It all depends what is your preferr
 App serves `/status.json` and `/rig_state.json` files. App logs are accessible in `/log` dir. Current mining app log file is accessible at `/log/run.log`. Current miner log file is accessible at `/log/miner.log`
 Default web server port is `8181`
 
+## Changelog
+
+v1.1.0:
+- New: Added support for worker specific config file
+- New: Added app version info
+- New: Some pushover message formatting tweaks
+- Bug: mining-mon start and miner start reported to pushover the same way
+
+v1.0.0:
+- First version
+
 ## Roadmap (future plans)
 See https://github.com/drkn/mining-mon/projects/2 :)
 

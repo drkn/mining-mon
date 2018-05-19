@@ -1,6 +1,11 @@
 {
   "name": "mining-mon",
-  "version": "0.1.0",
+  "version": "1.1.0",
+  "author": {
+    "name": "Maciej Dragan"
+  },
+  "homepage": "https://github.com/drkn/mining-mon",
+  "license": "See readme.md",
   "scripts": {
     "start": "node run.js",
     "lint": "eslint --cache ./lib/*.js"

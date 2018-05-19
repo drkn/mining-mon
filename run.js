@@ -6,7 +6,7 @@ const watchdog = require('./lib/watchdog')
 
 app.start()
 
-miner.start()
+miner.start(true)
 monitor.start()
 watchdog.start()
 www.start()
