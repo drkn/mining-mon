@@ -26,10 +26,14 @@ Complete solution for mining software management with integrated monitoring and 
 
 ## Installation & configuration
 1. After checking out the repository run: `npm install`
-2. Place optional `worker.conf` in `mining-mon` directory. See `config-examples\worker.conf` for deails
-3. Place `run.conf` in `mining-mon` directory. See `config-examples` directory for details
+2. Place config files in mining-mon root directory. See `config-examples` directory for details
 
-App reads config in order `worker.conf`, `run.conf`. Variables from later override existing variables. You can use variables in `${variable}` format
+App reads config in order:
+1. `worker.conf` (general worker / rig configuration like worker name, wallets, pools etc.), 
+2. `run.conf` (miner and monitor configuration, what and how to mine)
+3. `run-${worker_name}.conf` (worker specific configuration)
+
+You can use all configuration files at once. It all depends what is your preferred way of configuring workers. If you own only one mining server - just one file - `run.conf` should be fine. Variables from later override existing variables. You can use variables in `${variable}` format. Either `run.conf` or `run-${worker_name}.conf` is required.
 
 ## Web server
 App serves `/status.json` and `/rig_state.json` files. App logs are accessible in `/log` dir. Current mining app log file is accessible at `/log/run.log`. Current miner log file is accessible at `/log/miner.log`
