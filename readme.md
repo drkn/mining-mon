@@ -41,6 +41,9 @@ Default web server port is `8181`
 
 ## Changelog
 
+v1.2.0
+- New: Auto remove old log files
+
 v1.1.0:
 - New: Added support for worker specific config file
 - New: Added app version info
