@@ -11,6 +11,7 @@ Complete solution for mining software management with integrated monitoring and 
 - Log files for easier retracing what was happening the the miner
 - WWW server for easier log access and server metrics
 - Pushover.net integration for mobile notifications
+- Autoupdate
 - Nice console UI 😊
 
 ## Supported hardware
@@ -40,6 +41,9 @@ App serves `/status.json` and `/rig_state.json` files. App logs are accessible i
 Default web server port is `8181`
 
 ## Changelog
+
+v1.3.0
+- New: Autoupdate function. miner-mon will periodically pull changes from git and restart itself if new version is detected
 
 v1.2.0
 - New: Auto remove old log files
