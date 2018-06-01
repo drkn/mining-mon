@@ -7,7 +7,7 @@ Complete solution for mining software management with integrated monitoring and 
 ## Features
 - Hardware monitoring (CPU temp, FAN speed, GPU power usage, GPU memory clocks, GPU clocks)
 - Miner monitoring (hashrate, shares)
-- Watchdog with miner restart (internet connection monitoring, mining software responsiveness, accepted shares increase)
+- Watchdog with miner restart (internet connection monitoring, mining software responsiveness, shares increase - global + per gpu with invalid and rejected shares monitoring)
 - Log files for easier retracing what was happening the the miner
 - WWW server for easier log access and server metrics
 - Pushover.net integration for mobile notifications
@@ -41,6 +41,14 @@ App serves `/status.json` and `/rig_state.json` files. App logs are accessible i
 Default web server port is `8181`
 
 ## Changelog
+
+v1.4.0
+- New: GPU shares watchdog (shares increase, invalid/rejected shares monitoring)
+- New: Better pushover notifications (more details)
+- New: More watchdog details in status.json file
+- Bug: Watchdog miner restarts are not being notified twice (restart + new miner start)
+- Bug: Autoupdate parameter handling fix
+- Bug: Fixed reading boolean parameters from config files
 
 v1.3.0
 - New: Autoupdate function. miner-mon will periodically pull changes from git and restart itself if new version is detected
